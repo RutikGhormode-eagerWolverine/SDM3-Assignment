@@ -1,0 +1,333 @@
+Using username "ubuntu".
+Authenticating with public key "Flipkart"
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 6.5.0-1014-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+  System information as of Tue Apr 16 13:33:14 UTC 2024
+
+  System load:  0.037109375       Processes:             100
+  Usage of /:   20.4% of 7.57GB   Users logged in:       0
+  Memory usage: 21%               IPv4 address for eth0: 172.31.41.107
+  Swap usage:   0%
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-41-107:~$ sudo apt update
+Hit:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:8 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:9 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:10 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:11 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1562 kB]
+Get:12 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [297 kB]
+Get:13 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1702 kB]
+Get:14 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [286 kB]
+Get:15 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1075 kB]
+Get:16 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [245 kB]
+Get:17 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22.1 kB]
+Get:18 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [49.7 kB]
+Get:19 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [12.1 kB]
+Get:20 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]
+Get:21 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [67.1 kB]
+Get:22 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [11.0 kB]
+Get:23 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:24 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:25 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [28.4 kB]
+Get:26 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.2 kB]
+Get:27 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+Get:28 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:29 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1346 kB]
+Get:30 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [237 kB]
+Get:31 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1670 kB]
+Get:32 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [280 kB]
+Get:33 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [852 kB]
+Get:34 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [163 kB]
+Get:35 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.8 kB]
+Get:36 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.2 kB]
+Get:37 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7588 B]
+Get:38 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Fetched 30.7 MB in 6s (5375 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+46 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ubuntu@ip-172-31-41-107:~$ docker -v
+Command 'docker' not found, but can be installed with:
+sudo snap install docker         # version 24.0.5, or
+sudo apt  install podman-docker  # version 3.4.4+ds1-1ubuntu1.22.04.2
+sudo apt  install docker.io      # version 24.0.5-0ubuntu1~22.04.1
+See 'snap info docker' for additional versions.
+ubuntu@ip-172-31-41-107:~$ sudo apt install docker.io
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bridge-utils containerd dns-root-data dnsmasq-base pigz runc ubuntu-fan
+Suggested packages:
+  ifupdown aufs-tools cgroupfs-mount | cgroup-lite debootstrap docker-doc rinse zfs-fuse | zfsutils
+The following NEW packages will be installed:
+  bridge-utils containerd dns-root-data dnsmasq-base docker.io pigz runc ubuntu-fan
+0 upgraded, 8 newly installed, 0 to remove and 46 not upgraded.
+Need to get 69.8 MB of archives.
+After this operation, 267 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 pigz amd64 2.6-1 [63.6 kB]
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 bridge-utils amd64 1.7-1ubuntu3 [34.4 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 runc amd64 1.1.7-0ubuntu1~22.04.2 [4267 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 containerd amd64 1.7.2-0ubuntu1~22.04.1 [36.0 MB]
+Get:5 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 dns-root-data all 2023112702~ubuntu0.22.04.1 [5136 B]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 dnsmasq-base amd64 2.90-0ubuntu0.22.04.1 [374 kB]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 docker.io amd64 24.0.5-0ubuntu1~22.04.1 [28.9 MB]
+Get:8 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 ubuntu-fan all 0.12.16 [35.2 kB]
+Fetched 69.8 MB in 2s (44.0 MB/s)
+Preconfiguring packages ...
+Selecting previously unselected package pigz.
+(Reading database ... 65273 files and directories currently installed.)
+Preparing to unpack .../0-pigz_2.6-1_amd64.deb ...
+Unpacking pigz (2.6-1) ...
+Selecting previously unselected package bridge-utils.
+Preparing to unpack .../1-bridge-utils_1.7-1ubuntu3_amd64.deb ...
+Unpacking bridge-utils (1.7-1ubuntu3) ...
+Selecting previously unselected package runc.
+Preparing to unpack .../2-runc_1.1.7-0ubuntu1~22.04.2_amd64.deb ...
+Unpacking runc (1.1.7-0ubuntu1~22.04.2) ...
+Selecting previously unselected package containerd.
+Preparing to unpack .../3-containerd_1.7.2-0ubuntu1~22.04.1_amd64.deb ...
+Unpacking containerd (1.7.2-0ubuntu1~22.04.1) ...
+Selecting previously unselected package dns-root-data.
+Preparing to unpack .../4-dns-root-data_2023112702~ubuntu0.22.04.1_all.deb ...
+Unpacking dns-root-data (2023112702~ubuntu0.22.04.1) ...
+Selecting previously unselected package dnsmasq-base.
+Preparing to unpack .../5-dnsmasq-base_2.90-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking dnsmasq-base (2.90-0ubuntu0.22.04.1) ...
+Selecting previously unselected package docker.io.
+Preparing to unpack .../6-docker.io_24.0.5-0ubuntu1~22.04.1_amd64.deb ...
+Unpacking docker.io (24.0.5-0ubuntu1~22.04.1) ...
+Selecting previously unselected package ubuntu-fan.
+Preparing to unpack .../7-ubuntu-fan_0.12.16_all.deb ...
+Unpacking ubuntu-fan (0.12.16) ...
+Setting up dnsmasq-base (2.90-0ubuntu0.22.04.1) ...
+Setting up runc (1.1.7-0ubuntu1~22.04.2) ...
+Setting up dns-root-data (2023112702~ubuntu0.22.04.1) ...
+Setting up bridge-utils (1.7-1ubuntu3) ...
+Setting up pigz (2.6-1) ...
+Setting up containerd (1.7.2-0ubuntu1~22.04.1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Setting up ubuntu-fan (0.12.16) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service → /lib/systemd/system/ubuntu-fan.service.
+Setting up docker.io (24.0.5-0ubuntu1~22.04.1) ...
+Adding group `docker' (GID 122) ...
+Done.
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Processing triggers for dbus (1.12.20-2ubuntu4.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-41-107:~$ docker -v
+Docker version 24.0.5, build 24.0.5-0ubuntu1~22.04.1
+ubuntu@ip-172-31-41-107:~$ sudo systemctl status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2024-04-16 13:34:58 UTC; 38s ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 2196 (dockerd)
+      Tasks: 8
+     Memory: 26.2M
+        CPU: 287ms
+     CGroup: /system.slice/docker.service
+             └─2196 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Apr 16 13:34:58 ip-172-31-41-107 systemd[1]: Starting Docker Application Container Engine...
+Apr 16 13:34:58 ip-172-31-41-107 dockerd[2196]: time="2024-04-16T13:34:58.325169731Z" level=info msg="Starting up"
+Apr 16 13:34:58 ip-172-31-41-107 dockerd[2196]: time="2024-04-16T13:34:58.327706023Z" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so usi>
+Apr 16 13:34:58 ip-172-31-41-107 dockerd[2196]: time="2024-04-16T13:34:58.449442459Z" level=info msg="Loading containers: start."
+Apr 16 13:34:58 ip-172-31-41-107 dockerd[2196]: time="2024-04-16T13:34:58.751525524Z" level=info msg="Loading containers: done."
+Apr 16 13:34:58 ip-172-31-41-107 dockerd[2196]: time="2024-04-16T13:34:58.773726429Z" level=info msg="Docker daemon" commit="24.0.5-0ubuntu1~22.04.1" graphdriver=overl>
+Apr 16 13:34:58 ip-172-31-41-107 dockerd[2196]: time="2024-04-16T13:34:58.774146121Z" level=info msg="Daemon has completed initialization"
+Apr 16 13:34:58 ip-172-31-41-107 dockerd[2196]: time="2024-04-16T13:34:58.826888694Z" level=info msg="API listen on /run/docker.sock"
+Apr 16 13:34:58 ip-172-31-41-107 systemd[1]: Started Docker Application Container Engine.
+lines 1-21/21 (END)
+ubuntu@ip-172-31-41-107:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ip-172-31-41-107:~$ sudo docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+ubuntu@ip-172-31-41-107:~$ sudo docker pull hello-world
+Using default tag: latest
+latest: Pulling from library/hello-world
+c1ec31eb5944: Pull complete
+Digest: sha256:03b30c6a3c320ff172b52bd68eddffde6ded08ce47e650fe52de861c5e9df46d
+Status: Downloaded newer image for hello-world:latest
+docker.io/library/hello-world:latest
+ubuntu@ip-172-31-41-107:~$ sudo docker images
+REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+hello-world   latest    d2c94e258dcb   11 months ago   13.3kB
+ubuntu@ip-172-31-41-107:~$ sudo docker pull nginx
+Using default tag: latest
+latest: Pulling from library/nginx
+13808c22b207: Pull complete
+6fcdffcd79f0: Pull complete
+fbf231d461b3: Pull complete
+c9590dd9c988: Pull complete
+b4033143d859: Pull complete
+abaefc5fcbde: Pull complete
+bcef83155b8b: Pull complete
+Digest: sha256:9ff236ed47fe39cf1f0acf349d0e5137f8b8a6fd0b46e5117a401010e56222e1
+Status: Downloaded newer image for nginx:latest
+docker.io/library/nginx:latest
+ubuntu@ip-172-31-41-107:~$ sudo docker images
+REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+nginx         latest    c613f16b6642   2 months ago    187MB
+hello-world   latest    d2c94e258dcb   11 months ago   13.3kB
+ubuntu@ip-172-31-41-107:~$ sudo docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+ubuntu@ip-172-31-41-107:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ip-172-31-41-107:~$ sudo docker run --name aditi -d -p 8080:80 hello-world
+b78956e59082b27c9f971a2a57dac4c3f4d3784fe661f0a2854467debb401d35
+ubuntu@ip-172-31-41-107:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ip-172-31-41-107:~$ sudo docker run --name aditi -d -p 8080:80 nginx
+docker: Error response from daemon: Conflict. The container name "/aditi" is already in use by container "b78956e59082b27c9f971a2a57dac4c3f4d3784fe661f0a2854467debb401d35". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+ubuntu@ip-172-31-41-107:~$ sudo docker run --name nginx -d -p 8080:80 nginx
+cf843da2bf297b223e838df16274253fa62bbab9fdbba4841859f065e19ecc4b
+ubuntu@ip-172-31-41-107:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                                   NAMES
+cf843da2bf29   nginx     "/docker-entrypoint.…"   9 seconds ago   Up 8 seconds   0.0.0.0:8080->80/tcp, :::8080->80/tcp   nginx
+ubuntu@ip-172-31-41-107:~$ ls
+ubuntu@ip-172-31-41-107:~$ mkdir project
+ubuntu@ip-172-31-41-107:~$ cd project
+ubuntu@ip-172-31-41-107:~/project$ git clone https://github.com/RaviTambade/tflstore.git
+Cloning into 'tflstore'...
+remote: Enumerating objects: 61, done.
+remote: Counting objects: 100% (61/61), done.
+remote: Compressing objects: 100% (47/47), done.
+remote: Total 61 (delta 9), reused 58 (delta 9), pack-reused 0
+Receiving objects: 100% (61/61), 39.19 MiB | 16.98 MiB/s, done.
+Resolving deltas: 100% (9/9), done.
+ubuntu@ip-172-31-41-107:~/project$ sudo docker build -t tfimage .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/ubuntu/project/Dockerfile: no such file or directory
+ubuntu@ip-172-31-41-107:~/project$ ls
+tflstore
+ubuntu@ip-172-31-41-107:~/project$ cd tflstore
+ubuntu@ip-172-31-41-107:~/project/tflstore$ sudo docker build -t tflimage .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  89.34MB
+Step 1/6 : FROM node:18
+18: Pulling from library/node
+609c73876867: Pull complete
+7247ea8d81e6: Pull complete
+be374d06f382: Pull complete
+b4580645a8e5: Pull complete
+dfc93b8f025c: Pull complete
+1dec0eb05b3b: Pull complete
+10fbb3ff8918: Pull complete
+e6a367f8358b: Pull complete
+Digest: sha256:bdbe1cff7e74208531a90ffcfa32b1cb909d4720d9aa60b649b26b9e7ba439a5
+Status: Downloaded newer image for node:18
+ ---> b6bd2bb59dfb
+Step 2/6 : WORKDIR /app
+ ---> Running in 09bea164a1f9
+Removing intermediate container 09bea164a1f9
+ ---> 9d720677c66a
+Step 3/6 : COPY package.json /app
+ ---> 195b0ed86768
+Step 4/6 : RUN npm install
+ ---> Running in 5ce2b9d576c6
+
+added 191 packages, and audited 192 packages in 54s
+
+18 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice
+npm notice New patch version of npm available! 10.5.0 -> 10.5.2
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.5.2>
+npm notice Run `npm install -g npm@10.5.2` to update!
+npm notice
+Removing intermediate container 5ce2b9d576c6
+ ---> 04be5f1ffff5
+Step 5/6 : COPY . /app
+ ---> 5d45b1effc98
+Step 6/6 : CMD node server.js
+ ---> Running in 7be7b5489b96
+Removing intermediate container 7be7b5489b96
+ ---> a52d45ffe698
+Successfully built a52d45ffe698
+Successfully tagged tflimage:latest
+ubuntu@ip-172-31-41-107:~/project/tflstore$ sudo docker run --name aditisales -d -p 8000:8000 tflimage
+ffaedebee7a3d5f8a17673c39a3876cf11b01c009149710ef35aa572f6576c96
+ubuntu@ip-172-31-41-107:~/project/tflstore$ sudo docker ps
+CONTAINER ID   IMAGE      COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+ffaedebee7a3   tflimage   "docker-entrypoint.s…"   9 seconds ago    Up 7 seconds    0.0.0.0:8000->8000/tcp, :::8000->8000/tcp   aditisales
+cf843da2bf29   nginx      "/docker-entrypoint.…"   14 minutes ago   Up 14 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp       nginx
+ubuntu@ip-172-31-41-107:~/project/tflstore$ https://github.com/RaviTambade/tflstore.githttps://github.com/RaviTambade/tflstore.githttps://github.com/RaviTambade/tflstore.gigithttps://github.com/RaviTambade/tflstore.githttps://github.com/RaviTambade                                                                                        
