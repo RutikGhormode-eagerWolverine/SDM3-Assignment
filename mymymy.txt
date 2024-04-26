@@ -1,0 +1,142 @@
+GIT AND AWS--
+username -- rutikghormode13@gamil.com
+password -- Sarnika@123
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git config -l
+git config --global user.name "eagerWolverine"
+git config --global user.email "rutikghormode13@gmail.com"
+
+**Node Server--.
+
+create and launch instance without using putty
+ls
+whoami
+1) Git Clone
+2) ls tflstore
+3) cd tflstore
+4) sudo apt update
+5) sudo apt install npm
+6) npm install
+7) node -v
+8) node server.js
+copy address of public 
+paste on portal (13.201.99.00 : 8000)
+
+
+
+**DOCKER--
+
+sudo apt update
+sudo apt install docker.io
+sudo docker ps
+sudo docker images
+
+git clone https://github.com/RaviTambade/tflstore.git
+ls
+cd tflstore
+sudo docker images
+sudo docker build -t tflimage .
+sudo docker images
+sudo docker run --name rutik -d -p 8000:8000 tflimage
+sudo docker ps
+
+
+
+**UBUNTU--
+sudo adduser rutik ->Pass----
+
+New terminal ->
+sudo -s
+sudo usermod -a -G sudo rutik
+cat /etc/group
+
+chmod 777
+
+
+** GIT Branch-->
+
+$ git clone https://github.com/eagerWolverine13/SDM4Myyy.git
+
+$ cd SDM4Myyy
+
+$ git branch Holllywood
+$ git branch Bolllywood
+
+$ git checkout Holllywood
+$ touch f1.txt
+$ code .
+$ git add .
+$ git commit -m "BBB"
+$ git push
+$ git push -u origin Holllywood
+
+$ git checkout bolllywood
+$ touch f2.txt
+$ code .
+$ git add .
+$ git commit -m "GGG"
+$ git push -u origin bolllywood
+
+
+$ git branch
+  Holllywood
+* bolllywood
+  main
+
+$ git merge Holllywood
+$ git merge bolllywood
+$ git push
+
+
+
+
+
+
+
+
+
+
+
+
+

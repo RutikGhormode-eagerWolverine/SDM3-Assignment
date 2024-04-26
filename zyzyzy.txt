@@ -1,0 +1,51 @@
+1) To check branch
+ $ git branch
+2)  To create and switch branch
+ $ git checkout -b SDM1
+
+3)  To create txt file inside branch
+$ echo "Hello From branch SDM1" > SDM1.txt
+4)  To check status of branch
+$ git status
+
+5)  To add file to staging as snapshot 
+$ git add .
+6) To check status after adding to stage  
+$ git status
+
+7) To commit file in local repository with message 
+$ git commit –m “pushing branch”
+
+8) To pushing branch to remote repository using git 
+$ git push –u origin SDM1
+
+9) To merge we have to switch to main first and then merge 
+$ git checkout main
+$git merge SDM1
+
+10) To push merge file into the remote repository we have to use this command
+$ git push origin main
+
+11) To create a branch for using delete command and check all branch for LOCAL REPOSITORY
+$ git checkout –b Delete1
+$git branch
+
+12) To create a branch for using delete command and check all branch for REMOTE REPOSITORY
+$ git checkout -b del1
+$ git push origin --delete del1
+
+#Stirng Palindrome or not
+
+#!/bin/bash
+
+read -p "Enter the string : " str
+temp="$str"
+
+reverse=$(echo "$temp" | rev)
+
+if [ "$str" == "$reverse" ]
+	then 
+	echo "String [$str] is Palindrome "
+else
+	echo "String [$str] is not Palindrome"
+fi
